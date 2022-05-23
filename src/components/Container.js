@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from "react";
-import Card from "./Card";
 import NoteList from "./NoteList";
 
 export default function Container(props){
@@ -7,7 +6,7 @@ export default function Container(props){
     const [Loading,setLoading] = useState(true)
 
     var status = props.type;
-    console.log("s",status)
+ 
 
        
           //fetch('https://imdb-api.com/en/API/InTheaters/k_3lc4097t')

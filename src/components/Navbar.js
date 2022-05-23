@@ -7,7 +7,7 @@ export default function Navbar(props){
           <h2>Imdb Search</h2>
           </div>
         <nav> 
-          <ul>
+          <ul className="nav-bar">
             <li><button onClick={props.show}>Home</button></li>
             <li><button onClick={props.show}>Top 10</button></li>
             <li><button onClick={props.show}>Anime</button></li>

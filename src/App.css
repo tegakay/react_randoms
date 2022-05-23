@@ -63,7 +63,7 @@ header{
   cursor: pointer;
 }
 
-ul{
+.nav-bar{
   display: flex;
   list-style: none;
 }
@@ -197,8 +197,18 @@ ul li button:hover{
   }
 .list-items{
   max-width: 50%;
-  display: flex;
+  
  
   align-items: center;
   justify-content: center;
+}
+.iCard-style1{
+  margin: 20px;
+ 
+}
+
+.stop-overflow{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  
 }

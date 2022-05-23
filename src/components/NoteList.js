@@ -26,8 +26,8 @@ export default function NoteList(props) {
 
        })
   return (
-    <div>
-     <ul>
+    <div >
+     <ul className='stop-overflow'>
          {imdblistdata}
      </ul>
     
