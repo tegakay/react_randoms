@@ -5,7 +5,7 @@ export default function Container(props){
     const [imdbList, setImdbList] = useState()
     const [Loading,setLoading] = useState(true)
 
-    var status = props.type;
+
  
 
        
@@ -18,24 +18,20 @@ export default function Container(props){
         },[])
 
         const fetchreq = () =>{
-            if(status ==="home"){
+           
                
                 fetch('https://api.imgflip.com/get_memes')
                 .then(res=>res.json())
                 .then(data=>setImdbList(data.data.memes))
                 .then(data=>{return setLoading(false)})
                 
-            }
+            
         }
     
 
         if (Loading) {
             return <div className="App">Loading...</div>;
           }
-
-
-       console.log("stuff",imdbList)
-
     
 return(
     <NoteList 

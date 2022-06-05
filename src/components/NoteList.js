@@ -13,6 +13,7 @@ export default function NoteList(props) {
                 <li>
                      <Card
                 key = {cards.id}
+                id = {cards.id}
                 name = {cards.name}
                 url = {cards.url}
                  />

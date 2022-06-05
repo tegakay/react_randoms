@@ -68,7 +68,7 @@ header{
   list-style: none;
 }
 
-ul li button{
+ul li a{
   background: none!important;
   border: none;
 
@@ -81,7 +81,7 @@ ul li button{
   transition: all 0.3s ease 0s;
 }
 
-ul li button:hover{
+ul li a:hover{
   color: #fad519;
 }
 
@@ -140,7 +140,8 @@ ul li button:hover{
 
   .img-card .card-text {
       padding: 0 15px 15px;
-      line-height: 1.5;   
+      line-height: 1.5;  
+      color: #282c34; 
   }
 
   .img-card .card-link {
@@ -152,6 +153,7 @@ ul li button:hover{
           text-decoration: none;
           position: relative;
           padding: 10px 0;
+          color: #282c34;
       }
 
       .img-card .card-link a:after {

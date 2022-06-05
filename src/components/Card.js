@@ -1,12 +1,14 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 export default function Card(props) {
+  console.log(props)
   return (
-    <div class="img-card iCard-style1">
+    <div class="img-card ">
       <div className="card-content">
         <div className="card-image">
           <span className="card-title">{props.name}</span>
-          <img src={props.url} />
+          <img src={props.url} alt="meme" />
         </div>
 
         <div className="card-text">
@@ -24,9 +26,11 @@ export default function Card(props) {
         </div>
 
         <div className="card-link">
-          <a href="google.com">
-            <span>Read Full</span>
-          </a>
+          <Link to={`/movies/${props.id}`}>
+          <span>Read Full</span>
+          </Link>
+            
+          
         </div>
       </div>
     </div>

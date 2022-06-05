@@ -1,19 +1,23 @@
-import React,{useState} from 'react';
-import Card from './components/Card';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Container from './components/Container';
+import Homepage from './components/Homepage';
+import ViewSingle from './components/ViewSingle';
 import './App.css';
+import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 
 function App() {
-
-  const [clicked, setClicked] = useState("home")
   return (
-    <div>
-      <Navbar />
-    <Container
-    type ={clicked} />
-    
+    <Router>
+    <div className="App">
+      <Navbar/>
+      <Routes>
+        <Route exact path = "/" element={<Homepage/>} />
+        <Route exact path = "/movies" element={<Container/>} />
+        <Route exact path = "/movies/:id" element={<ViewSingle />} />
+      </Routes>
     </div>
+  </Router>
   );
 }
 
