@@ -1,7 +1,11 @@
-import React,{useState,useEffect} from "react";
+import React,{useState,useEffect,useContext} from "react";
 import NoteList from "./NoteList";
+import BookContext from "./BookContext";
 
 export default function Container(props){
+    
+    const [theme] = useContext(BookContext)
+    console.log(theme)
     const [imdbList, setImdbList] = useState()
     const [Loading,setLoading] = useState(true)
 
@@ -34,8 +38,12 @@ export default function Container(props){
           }
     
 return(
-    <NoteList 
-    notes ={imdbList}/>
+    <div className={theme ? 'light':'dark'}>
+        <NoteList 
+    notes ={imdbList}
+    />
+    </div>
+    
 )
    
 }

@@ -214,3 +214,10 @@ ul li a:hover{
   grid-template-columns: auto auto auto;
   
 }
+
+.light{
+  background-color: blanchedalmond;
+}
+.dark {
+  background-color: darkgray;
+}
